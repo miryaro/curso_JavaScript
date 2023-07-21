@@ -1,5 +1,5 @@
 body{
-  background: rgb(70, 142, 236);
+  background: rgb(23, 59, 106);
   font: normal 15pt Arial;
 
 
@@ -13,9 +13,11 @@ header{
 
 select#res{
    width: 200px;
-
+   
 }
-
+div{
+   text-align: center;
+}
 section{
    background:  white;
    border-radius: 10px; 

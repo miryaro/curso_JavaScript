@@ -1,0 +1,18 @@
+div.container{
+    border-radius: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+div.nav-center{
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin-right: 100%;
+}
+nav{
+    border: 10px;
+}

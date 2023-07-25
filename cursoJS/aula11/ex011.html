@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vericação de Nacionalidade</h1>
+     Vivendo em: <input type="text" name="pais" id="pais">
+     <input type="button" value="Verificar" onclick="veri()">
+     <div id="result">
+
+     </div>
+     <script>
+        function veri(){
+          var Nacionalidade = window.document.querySelector('input#pais')
+          var result = window.document.querySelector('div#result')
+          var ver = (Nacionalidade.value)
+          result.innerHTML = `<p> Seu pais atual é <strong>${ver}!</strong><p>`
+
+          if(ver == 'Brasil' || ver == 'brasil' ){
+            result.innerHTML += `<p><strong>Você é brasileiro!</strong><p>`
+          } else {
+           result.innerHTML += `<p><strong>Você é estrangeiro!</strong><p>`
+          }
+        }
+     </script> 
+</body>
+</html>

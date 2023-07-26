@@ -39,10 +39,10 @@ function startTimer(){
             secondsEl.textContent = formatTime(seconds);
             millisecondsEl.textContent = formatMilliseconds(milliseconds);
         }
-    }, 10)
+    }, 10);
 
-    startBtn.style.display = "none"
-    pauseBtn.style.display = "block"
+    startBtn.style.display = "none";
+    pauseBtn.style.display = "block";
 }
 
 function pauseTimer() {
@@ -50,7 +50,7 @@ function pauseTimer() {
     pauseBtn.style.display = "none"
     resumeBtn.style.display ="block"
 }
-
+// botão continuar
 function resumeTimer(){
     isPaused = false
     pauseBtn.style.display = "block"
@@ -77,5 +77,5 @@ function formatTime(time) {
 }
 
 function formatMilliseconds(time){
-    return time < 100 ? time.padStart(3, "0") : time;
+    return time < 100 ? `${time}`.padStart(3, "0") : time;
 }

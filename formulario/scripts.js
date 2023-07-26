@@ -31,6 +31,7 @@ form.addEventListener("submit", (event) => {
     //verifica se a mensagem esta preenchida
     if(messageTextarea.value === ""){
         alert("Por favor, escreva uma mensagem");
+        return;
     }
     //se todos os campos estiverem corretamente preenchidos, envie o flowFrom: 
     form.submit();

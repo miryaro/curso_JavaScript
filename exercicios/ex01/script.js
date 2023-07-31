@@ -1,12 +1,15 @@
+
 function verificar(){
     var data = new Date()
     var ano = data.getFullYear()
+    var nome = document.getElementById('txtnome')
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
-    if(fano.value.length == 0 || fano.value > ano){
+    if(fano.value.length == 0 || fano.value > ano || nome.value === ''){
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else{
         var fsex = document.getElementsByName('radsex')
+        var no = nome.value
         var idade = ano - fano.value
         var gênero=''
         var img = document.createElement('img')
@@ -34,8 +37,10 @@ function verificar(){
             img.setAttribute('src', 'mulher_idosa.jpg')
         }
     }
+  
     res.style.textAlign = 'center'
-    res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
+    res.innerHTML = `Detectamos ${no} um(a) ${gênero} com ${idade} anos.`
     res.appendChild(img)
     }
+    
 }
